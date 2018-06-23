@@ -9,13 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    func showOutput(age: String) {
+        ageOutputField.text = "Your cat is " + age + " in cat years."
+    }
 
     @IBAction func onClick(_ sender: Any) {
         if ageInputField.text != "" {
             let age = ageInputField.text
             let computedAge = Int(age!)! * 7
             let ageStr = String(computedAge)
-            ageOutputField.text = "Your cat is " + ageStr + " in cat years."
+            showOutput(age: ageStr)
         }
     }
     
