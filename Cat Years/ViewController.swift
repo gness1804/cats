@@ -11,8 +11,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func onClick(_ sender: Any) {
-        if let age = ageInputField.text {
-            let computedAge = Int(age)! * 7
+        if ageInputField.text != "" {
+            let age = ageInputField.text
+            let computedAge = Int(age!)! * 7
             let ageStr = String(computedAge)
             ageOutputField.text = "Your cat is " + ageStr + " in cat years."
         }
