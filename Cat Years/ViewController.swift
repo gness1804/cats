@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         }
             return false
     }
+    
+    func clearInput()  {
+        ageInputField.text = ""
+    }
 
     @IBAction func onClick(_ sender: Any) {
         if ageInputField.text != "" {
@@ -27,9 +31,11 @@ class ViewController: UIViewController {
             let computedAge = Int(age!)! * 7
             if catIsTooOld(age: computedAge) {
                 ageOutputField.text = "Your cat is dead."
+                clearInput()
             } else {
                 let ageStr = String(computedAge)
                 showOutput(age: ageStr)
+                clearInput()
             }
         } else {
             ageOutputField.text = "Please enter a valid age."
