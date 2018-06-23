@@ -13,13 +13,26 @@ class ViewController: UIViewController {
     func showOutput(age: String) {
         ageOutputField.text = "Your cat is " + age + " in cat years."
     }
+    
+    func catIsTooOld(age: Int) -> Bool {
+        if age > 140 {
+            return true
+        }
+            return false
+    }
 
     @IBAction func onClick(_ sender: Any) {
         if ageInputField.text != "" {
             let age = ageInputField.text
             let computedAge = Int(age!)! * 7
-            let ageStr = String(computedAge)
-            showOutput(age: ageStr)
+            if catIsTooOld(age: computedAge) {
+                ageOutputField.text = "Your cat is dead."
+            } else {
+                let ageStr = String(computedAge)
+                showOutput(age: ageStr)
+            }
+        } else {
+            ageOutputField.text = "Please enter a valid age."
         }
     }
     
