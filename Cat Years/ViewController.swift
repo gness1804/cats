@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    func showOutput(age: String) {
+    func showOutputAge(age: String) {
         ageOutputField.text = "Your cat is " + age + " in cat years."
+    }
+    
+    func showOutputNoAge(msg: String)  {
+        ageOutputField.text = msg
     }
     
     func catIsTooOld(age: Int) -> Bool {
@@ -30,15 +34,15 @@ class ViewController: UIViewController {
             let age = ageInputField.text
             let computedAge = Int(age!)! * 7
             if catIsTooOld(age: computedAge) {
-                ageOutputField.text = "Your cat is dead."
+                showOutputNoAge(msg: "Your cat is dead.")
                 clearInput()
             } else {
                 let ageStr = String(computedAge)
-                showOutput(age: ageStr)
+                showOutputAge(age: ageStr)
                 clearInput()
             }
         } else {
-            ageOutputField.text = "Please enter a valid age."
+            showOutputNoAge(msg: "Please enter a valid age.")
         }
     }
     
