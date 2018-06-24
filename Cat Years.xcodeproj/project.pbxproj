@@ -14,6 +14,7 @@
 		B3EFF76A20DF055A004CDC5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EFF76820DF055A004CDC5B /* LaunchScreen.storyboard */; };
 		B3EFF77520DF055B004CDC5B /* Cat_YearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EFF77420DF055B004CDC5B /* Cat_YearsTests.swift */; };
 		B3EFF78020DF055B004CDC5B /* Cat_YearsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EFF77F20DF055B004CDC5B /* Cat_YearsUITests.swift */; };
+		B3EFF78E20DF20CB004CDC5B /* mal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3EFF78D20DF20CB004CDC5B /* mal.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B3EFF77B20DF055B004CDC5B /* Cat YearsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cat YearsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EFF77F20DF055B004CDC5B /* Cat_YearsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_YearsUITests.swift; sourceTree = "<group>"; };
 		B3EFF78120DF055B004CDC5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3EFF78D20DF20CB004CDC5B /* mal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mal.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				B3EFF76620DF055A004CDC5B /* Assets.xcassets */,
 				B3EFF76820DF055A004CDC5B /* LaunchScreen.storyboard */,
 				B3EFF76B20DF055A004CDC5B /* Info.plist */,
+				B3EFF78D20DF20CB004CDC5B /* mal.jpg */,
 			);
 			path = "Cat Years";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3EFF78E20DF20CB004CDC5B /* mal.jpg in Resources */,
 				B3EFF76A20DF055A004CDC5B /* LaunchScreen.storyboard in Resources */,
 				B3EFF76720DF055A004CDC5B /* Assets.xcassets in Resources */,
 				B3EFF76520DF0557004CDC5B /* Main.storyboard in Resources */,
