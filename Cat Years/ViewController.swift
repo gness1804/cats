@@ -32,6 +32,10 @@ class ViewController: UIViewController {
     @IBAction func onClick(_ sender: Any) {
         if ageInputField.text != "" {
             let age = ageInputField.text
+            if Int(age!) == nil {
+                showOutputNoAge(msg: "Please enter a valid number.")
+                return
+            }
             let computedAge = Int(age!)! * 7
             if catIsTooOld(age: computedAge) {
                 showOutputNoAge(msg: "Your cat is dead.")
